@@ -10,7 +10,9 @@
  * @param {number} n
  * @return {number}
  */
-
+function addOne(n){
+	return n + 1;
+}
 
 /**
  * Subtracts one from a given number.
@@ -18,14 +20,19 @@
  * @return {number}
  */
 
-
+function subtractOne(n){
+	return n - 1;
+}
 /**
  * Adds two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the sum
  */
-
+ 
+ function sum(x,y){
+ 	return x + y;
+ }
 
 /**
  * Subtracts the second number from the first.
@@ -34,6 +41,9 @@
  * @return {number} the difference
  */
 
+function difference(x,y){
+	return x - y;
+}
 
 /**
  * Multiplies two numbers.
@@ -42,6 +52,9 @@
  * @return {number} the product
  */
 
+function product(x,y){
+	return x * y;
+}
 
 /**
  * Divides the first number by the second.
@@ -50,14 +63,18 @@
  * @return {number} the quotient
  */
 
-
+function quotient(x,y){
+	return x / y;
+}
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
 
-
+function square(x){
+	return x * x;
+}
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
@@ -67,6 +84,23 @@
  * @return {number} the result
  */
 
+function solve(operation,x,y){
+	if(operation=="add") {
+		return x + y;
+	}
+	if(operation=="subtract") {
+		return x -y;
+	}
+	if(operation=="multiply") {
+		return x * y;
+	}
+	if(operation=="divide") {
+		return x / y;
+	}
+	else {
+		return "try again";
+	}
+}
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -75,6 +109,15 @@
  * @return {boolean} `a` is larger than `b`
  */
 
+function compare(a,b){
+	if (a>b){
+		return true;
+	}
+	else{
+		return false;
+	}
+
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -83,6 +126,15 @@
  * @return {boolean} `a` is smaller than `b`
  */
 
+function compare(a,b){
+	if (a>b){
+		return true;
+	}
+	else{
+		return false;
+	}
+
+}
 
 /**
  * Returns true if `a` and `b` are equal.
